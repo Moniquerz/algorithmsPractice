@@ -17,7 +17,7 @@ function search (arr, item) {
             //if item matches mid element, return mid(the index of item)
             return mid;
         } else if  (item < arr[mid]){
-            //if item is less than mid, set high to mid - 1
+            //because mid is higher than item we dont need to check everything to the right of mid, set high to mid -1 
              high = mid - 1;
         } else {
             //if item is greater than mid add 1 to low
